@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const { homePage } = require('../pages/homePage');
 const { registerPage } = require('../pages/registerPage');
 const { productPage } = require('../pages/productPage');
-test.describe("TC1 Register User", () => {
+test.describe(" Register User", () => {
 
     //1. Launch browser
     //2. Navigate to url 'https://automaticityacademy.ngrok.app/'
@@ -12,7 +12,7 @@ test.describe("TC1 Register User", () => {
     //6. Enter email and password and click 'register' button
     ///8. Verify that user is not created
 
-    test("TC1 user register successfully", async ({ page }) => {
+    test("TC2InvalidRegisterUserWithoutUsername.spec", async ({ page }) => {
         let homePage1= new homePage(page) 
         let registerPage1= new registerPage(page)
         let productPage1= new productPage(page)
