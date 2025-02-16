@@ -8,9 +8,7 @@ export class logInPage extends BasePage{
         this.password=page.locator("#password")
         this.signInButton=page.getByRole('button', { name: /Sign in/i })
         this.welcomeBackMessage = page.locator('text=Welcome Back!')
-        this.errorEmailMessage = page.locator('text=The email field is required.')
-        this.errorPassworMessage = page.locator('text=The password field is required.')
-
+    
 
     }
     async chooseOption(a){
@@ -29,8 +27,7 @@ export class logInPage extends BasePage{
         await a.fill(b)
     }
     async isElementVisible(a) {
-        await a.waitFor({ state: 'visible' })
+        await a.waitFor({ state: 'visible', timeout: 5000 })
         return await a.isVisible();
     }
-        
 }
