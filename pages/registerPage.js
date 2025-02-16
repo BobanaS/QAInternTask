@@ -9,6 +9,8 @@ export class registerPage extends BasePage{
         this.password = page.locator("#password");
         this.registerButton = page.locator('button:has-text("Register")');
         this.registerMessage = page.locator('text=Already have an account?');
+        this.errorMessage = page.locator('text=The username field is required.');
+
     }
 
     async chooseOption(a) {
@@ -21,10 +23,18 @@ export class registerPage extends BasePage{
         await this.password.fill(c);
         await this.registerButton.click();
     }
-
+    async fillForm(a,b) {
+        await a.fill(b);
+    
+    }
     async isRegisterMessageVisible() {
         await this.registerMessage.waitFor({ state: 'visible' })
         return await this.registerMessage.isVisible();
     }
+    async isErrorMessageVisible(a) {
+        await a.waitFor({ state: 'visible' })
+        return await a.isVisible();
+    }
+    
     
 }
