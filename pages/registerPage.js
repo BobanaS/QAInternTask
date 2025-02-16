@@ -10,6 +10,11 @@ export class registerPage extends BasePage{
         this.registerButton = page.locator('button:has-text("Register")');
         this.registerMessage = page.locator('text=Already have an account?');
         this.errorMessage = page.locator('text=The username field is required.');
+        this.errorMessageEmail = page.locator('text=The email field is required.');
+        this.errorMessagePassword = page.locator('text=The password field is required.')
+
+
+
 
     }
 
