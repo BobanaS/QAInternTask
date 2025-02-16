@@ -7,17 +7,22 @@ This project contains automated tests for specific scenarios using Playwright. T
 - Playwright
 
 ## Scenarios
-### Login
-- Positive case
-- Few negative cases
 
 ### Register
-- Positive case
-- Few negative cases
 
-## Extra
-- API and E2E layer and tests
-- Cover the flow of shopping for a new product from the store
+TC1RegisterUser.spec.js
+TC2InvalidRegisterUserWithoutUsername.spec.js
+TC3InvalidRegisterUserWithoutCredentials.spec.js
+TC4InvalidRegisterUserWithoutPassword.spec.js
+
+### Login
+
+TC5LogIn.spec.js
+TC6LogInWithoutCredentials.spec.js
+TC7LogInWithoutPassword.spec.js
+TC8LogInWithoutEmail.spec.js
+
+
 
 ## Installation
 1. Clone the repository:
