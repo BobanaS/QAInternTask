@@ -43,8 +43,6 @@ Run the tests using the following command:
 npx playwright test
 ```
 
-## License
-Specify the license under which the project is distributed.
-
 ## Contact
-Provide contact information or links to relevant profiles.
+
+linkedin: [Bobana Simikic](https://www.linkedin.com/in/bobana-simikic160719918/) 
